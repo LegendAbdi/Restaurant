@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ocean's Bounty Seafood Grill</title>
+
+        <link rel="stylesheet" href="restaurant.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="restaurant.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+    </head>
+
+    <body>
+        <!-----------------------------Header----------------------->
+        <div class="header" id="header">
+            <div class="header-items" id="header-text">
+                <div class="logo-image-2">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
+                <nav class="header-text">
+                    <ul>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                        <div class="left-header-text">
+                            <li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li>
+                                <a href="menu.html" class="nav-link">Menu</a>
+                            </li>
+                            <li>
+                                <a href="reservation.html" class="nav-link"
+                                    >Reservation</a
+                                >
+                            </li>
+                        </div>
+                        <div class="smallSize-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="Images/rlogo.jpg" alt="" class="logo" />
+                    </a>
+                </div>
+                <nav class="header-text">
+                    <ul>
+                        <div class="right-header-text">
+                            <li>
+                                <a href="onlineOrder.html" class="nav-link"
+                                    >Online Order</a
+                                >
+                            </li>
+                            <li>
+                                <a href="events.html" class="nav-link"
+                                    >Events</a
+                                >
+                            </li>
+                            <li>
+                                <a href="giftCard.html" class="nav-link"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--------------------------------events-------------------------->
+        <div class="event" id="event">
+            <div class="upcoming-events">
+                <div class="upcoming-events-title">
+                    <div class="sp-title">
+                        <img src="Images/hangingboard copy.jpeg" alt="" />
+                        <h1>Upcoming Events</h1>
+                    </div>
+                </div>
+                <div class="new-event">
+                    <div class="event-image">
+                        <img src="Images/sea.jpg" alt="" />
+                    </div>
+                    <div class="event-info">
+                        <h2>Sea Food Fest</h2>
+                        <h3>Date : 10th November 2023</h3>
+                        <h3>Ticket: $40 / person</h3>
+                        <p>
+                            Join us on 10th November and experience the delight
+                            of the sea. We will be serving the freshest catch,
+                            serve different specialty meals, and play relaxing
+                            soothing music. Don't miss out on experiencing the
+                            treasures of the sea!
+                        </p>
+                    </div>
+                </div>
+                <div class="new-event">
+                    <div class="event-image">
+                        <img src="Images/cook.jpg" alt="" />
+                    </div>
+                    <div class="event-info">
+                        <h2>Cooking Classes</h2>
+                        <h3>Date : 20th December 2023</h3>
+                        <h3>Ticket: $50 / person</h3>
+                        <p>
+                            Unleash your cooking potential with our cooking
+                            classes. From shucking oysters to searing scallops,
+                            learn the art of preparing seafood from our expert
+                            chefs. Join us and let's make memorable food
+                            together!
+                        </p>
+                    </div>
+                </div>
+                <div class="new-event">
+                    <div class="event-image">
+                        <img src="Images/markt.jpg" alt="" />
+                    </div>
+                    <div class="event-info">
+                        <h2>Sea Food Market</h2>
+                        <h3>Date : 5th January 2024</h3>
+                        <h3>Ticket: Free</h3>
+                        <p>
+                            Discover the bounty of the ocean at our vibrant
+                            Seafood Market Day! Handpick the finest selection of
+                            shellfish, fish, and other seafood. Meet the local
+                            fishmongers, sample the catch of the day, and take
+                            home the freshest ingredients. Fresh, flavorful, and
+                            waiting for you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inquiry-form" id="inquiry-form">
+                <div class="inquiry-form-title">
+                    <div class="sp-title">
+                        <img src="Images/hangingboard copy.jpeg" alt="" />
+                        <h1>Inquiry form</h1>
+                    </div>
+                </div>
+                <form action="#" method="POST" onsubmit="return false;">
+                    <input
+                        type="text"
+                        name="Name"
+                        id="name"
+                        placeholder="Enter your Name"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="Email"
+                        id="email"
+                        placeholder="Enter your Email"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Enter Phone Number"
+                        required
+                    />
+                    <input type="date" name="Date" id="date" required />
+                    <label for="service">Number of Guests</label>
+                    <select name="Guest" id="guest">
+                        <option value="guest-1">10 - 40</option>
+                        <option value="guest-2">40 - 60</option>
+                        <option value="guest-3">60 - 100</option>
+                    </select>
+                    <textarea
+                        name="Message"
+                        id="message"
+                        cols="6"
+                        placeholder="Do you have any message for us?"
+                    ></textarea>
+                    <button
+                        type="submit"
+                        class="btn"
+                        onclick="showSuccess()"
+                    >
+                        Send
+                    </button>
+                </form>
+            </div>
+            <div class="image-display">
+                <div class="image_container" id="image_container">
+                    <div class="image" id="image"></div>
+                </div>
+            </div>
+            <div class="event-popup" id="popup">
+                <div class="popup-container">
+                    <img src="Images/event.jpg" alt="" />
+                    <div class="close-offer" onclick="close_popup()">X</div>
+                    <div class="offer-text">
+                        <h2>EXCLUSIVE OFFER</h2>
+                        <h3>SCHEDULE YOUR FIRST EVENT</h3>
+                        <h2>GET 20% OFF</h2>
+                        <p>Limited time only! Book Now</p>
+                    </div>
+                    <div class="offer-info">
+                        <p>
+                            "Unlock a special 20% off for your first event with
+                            us. Make your first event unforgettable!"
+                        </p>
+                        <a href="#inquiry-form">
+                            <button class="btn" onclick="close_popup()">
+                                Book Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="about-footer">
+                            <h3>Ocean's Bounty Seafood Grill</h3>
+                            <ul>
+                                <li>
+                                    <a href="tel: +1 0123456789"
+                                        ><i
+                                            class="fas fa-phone fa-flip-horizontal"
+                                        ></i
+                                        >+1 1234561251</a
+                                    >
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    1 / 105 Bay Lights,
+                                    <br />Medford, <br />MA 02155
+                                </li>
+                            </ul>
+                            <a href="reservation.html" class="btn red-btn"
+                                >Reserve</a
+                            >
+                        </div>
+
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>Quick links</h4>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="about.html">Testimonial</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="page-more-info">
+                            <div class="footer-title">
+                                <h4>More Info</h4>
+                            </div>
+                            <ul>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="#">Gift Card target</a></li>
+
+                                <li>
+                                    <a
+                                        href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXX/Chapter140/Section6B"
+                                        target="_blank"
+                                        >Alergy Policy
+                                    </a>
+                                </li>
+
+                                <li><a href="contact.html"> Employment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="open-hours">
+                            <div class="footer-title">
+                                <h4>Open hours</h4>
+                                <ul class="footer-social">
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/MassWildlife/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-facebook-f"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-instagram"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/massmarinefisheries/"
+                                            target="_blank"
+                                            ><i
+                                                class="fab fa-linkedin-in"
+                                                target="_blank"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Monday -
+                                            Thursday
+                                        </td>
+                                        <td>12:00pm - 11:00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Friday
+                                        </td>
+                                        <td>12:00pm - 1:30am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Saturday
+                                        </td>
+                                        <td>9:00am - 1:30pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="far fa-clock"></i>Sunday
+                                        </td>
+                                        <td>9:30am - 1:30pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr />
+
+                            <div class="footer-logo">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="Images/mass_seafood.jpeg"
+                                                />
+                                            </td>
+                                            <td>
+                                                <img src="Images/rlogo.jpg" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="privacy-policy">
+                            <a href="">Privacy policy</a>
+                        </div>
+
+                        <div class="copyright">
+                            <p>
+                                &copy; 2023 Ocean's Bounty Seafood Grill. All
+                                rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
